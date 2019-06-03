@@ -4,19 +4,19 @@ import { CommonModule } from '@angular/common';
 
 // components
 import {UsersComponent} from './users.component';
-import {PopupComponent} from '../popup/popup.component';
 import {EditPopupComponent} from '../edit-popup/edit-popup.component';
+import {SharedModulesModule} from '../../SharedModules/shared-modules.module';
 
 @NgModule({
   declarations: [
     UsersComponent,
-    PopupComponent,
-    EditPopupComponent,
+    EditPopupComponent
 
   ],
   imports: [
    CommonModule,
-    FormsModule
+    FormsModule,
+    SharedModulesModule
   ],
   exports: [
     UsersComponent

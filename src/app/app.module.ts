@@ -6,6 +6,7 @@ import { UsersModule } from './components/users/users.module';
 import { SharedModulesModule } from './SharedModules/shared-modules.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
+import {PopupComponent} from './components/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     UsersModule,
-    SharedModulesModule,
-    NgbModule
+    NgbModule,
+    SharedModulesModule
   ],
   // exports: [NgbModule],
   providers: [],
