@@ -1,26 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// import { AppComponent } from './app.component';
-// import { UsersComponent } from './users/users.component';
-// import {FormsModule} from '@angular/forms';
-// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-// import { PopupComponent } from './components/popup/popup.component';
+import { AppComponent } from './app.component';
 import { UsersModule } from './components/users/users.module';
-import {AppComponent} from './app.component';
+import { SharedModulesModule } from './SharedModules/shared-modules.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    // AppComponent,
-    // UsersComponent,
-    // PopupComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    // FormsModule,
-    // NgbModule,
-    UsersModule
+    UsersModule,
+    SharedModulesModule,
+    NgbModule
   ],
+  // exports: [NgbModule],
   providers: [],
   bootstrap: [AppComponent]
 })

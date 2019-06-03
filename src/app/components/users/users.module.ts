@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // components
-import {AppComponent} from '../../app.component';
 import {UsersComponent} from './users.component';
 import {PopupComponent} from '../popup/popup.component';
+import {EditPopupComponent} from '../edit-popup/edit-popup.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     UsersComponent,
-    PopupComponent
+    PopupComponent,
+    EditPopupComponent,
+
   ],
   imports: [
-    CommonModule,
-    FormsModule,
-    NgbModule
+   CommonModule,
+    FormsModule
   ],
-  providers: [],
-  bootstrap: [UsersComponent]
+  exports: [
+    UsersComponent
+  ]
 })
 export class UsersModule { }

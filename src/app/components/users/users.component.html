@@ -9,6 +9,8 @@
       <th>Lastname</th>
       <th>Email</th>
       <th>Action</th>
+      <th>Edit</th>
+      <th>Delete</th>
     </tr>
     </thead>
     <tbody>
@@ -17,6 +19,11 @@
       <td>{{ user.surname }}</td>
       <td>{{ user.mail }}</td>
       <td>{{ user.age }}</td>
+      <td>
+        <div class="field">
+          <button class="btn btn-primary" (click)="EditUser(user)">Edit</button>
+        </div>
+      </td>
       <td>
         <div class="field">
           <button class="btn btn-danger" (click)="deleteUser(user)">x</button>
